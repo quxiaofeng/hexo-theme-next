@@ -11,10 +11,10 @@ menu:
   #commonweal: /404.html
 
 # Place your favicon.ico to /source directory.
-favicon: /favicon.ico
+favicon: /images/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo,next"
+keywords: "quxiaofeng,biometrics,research,LaTeX"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -40,14 +40,14 @@ mathjax: true
 
 
 # Schemes
-#scheme: Mist
+scheme: Mist
 
 
 # Sidebar, available value:
 #  - post    expand on posts automatically. Default.
 #  - always  expand for all pages automatically
 #  - hide    expand only when click on the sidebar toggle icon.
-sidebar: post
+sidebar: hide
 #sidebar: always
 #sidebar: hide
 
