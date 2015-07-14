@@ -13,8 +13,9 @@
   "strict": false,
 
   "globals": {
-    "$": true,
+    "define": true,
+    "require": true,
     "window": true,
-    "document": true
+    "$": true
   }
 }
