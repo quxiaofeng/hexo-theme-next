@@ -2,7 +2,7 @@
   <span class="logo-line-before"><i></i></span>
   <a href="{{ config.root }}" class="brand" rel="start">
       <span class="logo">
-        <i class="icon-logo"></i>
+        <i class="icon-next-logo"></i>
       </span>
       <span class="site-title">{{ config.title }}</span>
   </a>
@@ -26,11 +26,21 @@
         {% set itemName = name.toLowerCase() %}
         <li class="menu-item menu-item-{{ itemName }}">
           <a href="{{ url_for(path) }}" rel="section">
-            <i class="menu-item-icon icon-{{ itemName }}"></i> <br />
+            <i class="menu-item-icon icon-next-{{ itemName }}"></i> <br />
             {{ __('menu.' + itemName) }}
           </a>
         </li>
       {% endfor %}
+
+      {# Search icon for default scheme #}
+      {% if not theme.scheme %}
+        <li class="menu-item menu-item-search">
+          <a href="#" class="st-search-show-outputs">
+            <i class="menu-item-icon icon-next-search"></i> <br />
+            {{ __('menu.search') }}
+          </a>
+        </li>
+      {% endif %}
     </ul>
   {% endif %}
 
